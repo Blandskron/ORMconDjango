@@ -2,12 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # URLs para vistas de productos
-    path('productos/', views.ProductoListView.as_view(), name='producto_lista'),
-    path('productos/<int:pk>/', views.ProductoDetailView.as_view(), name='producto_detalle'),
-    path('productos/crear/', views.producto_crear, name='producto_crear'),
-    path('productos/<int:pk>/editar/', views.producto_editar, name='producto_editar'),
-
     # URLs para vistas de etiquetas
     path('etiquetas/', views.EtiquetaListView.as_view(), name='etiqueta_lista'),
     path('etiquetas/<int:pk>/', views.EtiquetaDetailView.as_view(), name='etiqueta_detalle'),
