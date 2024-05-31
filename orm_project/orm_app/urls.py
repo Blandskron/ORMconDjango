@@ -8,12 +8,6 @@ urlpatterns = [
     path('productos/crear/', views.producto_crear, name='producto_crear'),
     path('productos/<int:pk>/editar/', views.producto_editar, name='producto_editar'),
 
-    # URLs para vistas de categorías
-    path('categorias/', views.CategoriaListView.as_view(), name='categoria_lista'),
-    path('categorias/<int:pk>/', views.CategoriaDetailView.as_view(), name='categoria_detalle'),
-    path('categorias/crear/', views.categoria_crear, name='categoria_crear'),
-    path('categorias/<int:pk>/editar/', views.categoria_editar, name='categoria_editar'),
-
     # URLs para vistas de etiquetas
     path('etiquetas/', views.EtiquetaListView.as_view(), name='etiqueta_lista'),
     path('etiquetas/<int:pk>/', views.EtiquetaDetailView.as_view(), name='etiqueta_detalle'),
