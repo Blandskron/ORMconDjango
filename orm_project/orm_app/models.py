@@ -1,14 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
-from categoriaapp.models import Categoria
+from productoapp.models import Producto
 
-
-class Producto(models.Model):
-    nombre = models.CharField(max_length=100)
-    categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
-    
-    def __str__(self):
-        return self.nombre
 
 class Etiqueta(models.Model):
     nombre = models.CharField(max_length=100)
