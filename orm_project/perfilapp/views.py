@@ -6,7 +6,7 @@ from .forms import PerfilForm
 
 def perfil_detalle(request):
     perfil = get_object_or_404(Perfil, usuario=request.user)
-    return render(request, 'orm_app/perfil_detalle.html', {'perfil': perfil})
+    return render(request, 'perfilapp/perfil_detalle.html', {'perfil': perfil})
 
 def perfil_editar(request):
     perfil = get_object_or_404(Perfil, usuario=request.user)
@@ -19,7 +19,7 @@ def perfil_editar(request):
             return redirect('perfil_detalle')
     else:
         form = PerfilForm(instance=perfil)
-    return render(request, 'orm_app/perfil_editar.html', {'form': form})
+    return render(request, 'perfilapp/perfil_editar.html', {'form': form})
 
 def perfil_crear(request):
     if request.method == "POST":
@@ -31,4 +31,4 @@ def perfil_crear(request):
             return redirect('perfil_detalle')
     else:
         form = PerfilForm()
-    return render(request, 'orm_app/perfil_crear.html', {'form': form})
+    return render(request, 'perfilapp/perfil_crear.html', {'form': form})
