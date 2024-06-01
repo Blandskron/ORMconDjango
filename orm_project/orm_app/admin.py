@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Etiqueta, Perfil
+from .models import Perfil
 
 
-admin.site.register(Etiqueta)
 admin.site.register(Perfil)

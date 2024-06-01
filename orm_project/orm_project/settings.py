@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'orm_app',
     'categoriaapp',
     'productoapp',
+    'etiquetaapp',
 ]
 
 MIDDLEWARE = [
