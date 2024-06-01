@@ -1,10 +1,25 @@
 <nav>
     <ul>
         <li>
-            <a href="{% url 'categoria_lista' %}">Lista de Categoria</a>
+            <a href="{% url 'categoria_lista' %}">Lista de Categorias</a>
         </li>
         <li>
-            <a href="{% url 'producto_lista' %}">Lista de Producto</a>
+            <a href="{% url 'categoria_crear' %}">Crear Categorias</a>
+        </li>
+        <li>
+            <a href="{% url 'producto_lista' %}">Lista de Productos</a>
+        </li>
+        <li>
+            <a href="{% url 'producto_crear' %}">Crear Productos</a>
+        </li>
+        <li>
+            <a href="{% url 'etiqueta_lista' %}">Lista de Etiquetas</a>
+        </li>
+        <li>
+            <a href="{% url 'etiqueta_crear' %}">Crear Etiquetas</a>
+        </li>
+        <li>
+            <a href="{% url 'perfil_crear' %}">Crear Perfil</a>
         </li>
     </ul>
 </nav>

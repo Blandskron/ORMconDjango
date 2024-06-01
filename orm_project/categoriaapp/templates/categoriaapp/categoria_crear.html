@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Categoría</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Crear Categoria{% endblock %}
+
+{% block content %}
     <h1>Crear Categoría</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Crear Categoría</button>
     </form>
-</body>
-</html>
+{% endblock %}
